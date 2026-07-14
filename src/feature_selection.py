@@ -4,7 +4,7 @@ Feature Selection & Data Preparation
 This module prepares the processed housing dataset
 for machine learning model training.
 """
-
+import os
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -47,7 +47,15 @@ def correlation_analysis(df):
 
     plt.tight_layout()
 
-    plt.savefig("results/correlation_heatmap.png")
+    
+    os.makedirs("results", exist_ok=True)
+    plt.savefig(
+    os.path.join("results", "correlation_heatmap.png"),
+    dpi=300,
+    bbox_inches="tight"
+)
+
+
 
     plt.close()
 
@@ -77,9 +85,9 @@ def feature_importance(df):
     )
 
     importance.to_csv(
-        "results/feature_importance.csv",
-        index=False
-    )
+    os.path.join("results", "feature_importance.csv"),
+    index=False
+)
 
     print("Feature importance saved.")
 

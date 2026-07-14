@@ -16,8 +16,8 @@ __pycache__/
 *.pkl
 
 # Generated outputs
-results/*.png
-results/*.csv
+# results/*.png
+# results/*.csv
 
 # OS files
 .DS_Store
