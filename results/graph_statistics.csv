@@ -1,0 +1,14 @@
+metric,value
+num_nodes,20467.0
+num_edges,102335.0
+avg_in_degree,5.0
+avg_out_degree,5.0
+density,0.00024431
+weakly_connected_components,41.0
+largest_weak_component_size,4980.0
+strongly_connected_components,859.0
+largest_strong_component_size,1914.0
+min_degree,5.0
+max_degree,5.0
+median_degree,5.0
+std_degree,0.0

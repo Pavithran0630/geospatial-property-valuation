@@ -1,0 +1,64 @@
+=================================================================
+WEEK 3 PIPELINE VALIDATION SUMMARY
+Geospatial Property Valuation via Spatial Embeddings
+=================================================================
+
+GRAPH STATISTICS
+----------------------------------------
+  Total nodes (properties)  : 20,467
+  Total directed edges      : 102,335
+  Average neighbours (k)    : 5.0
+  Min dist between nbrs (km): 0.0000
+  Avg dist between nbrs (km): 0.199
+  Max dist between nbrs (km): 23.52
+
+EMBEDDING STATISTICS
+----------------------------------------
+  Method                    : Node2Vec (random walks + Word2Vec)
+  Embedding dimension       : 64
+  Nodes embedded            : 20,467
+  NaN in embeddings         : 0
+
+FINAL DATASET (spatial_dataset.csv)
+----------------------------------------
+  Shape                     : 20,467 rows x 92 columns
+  Housing feature columns   : 28
+  Embedding columns         : 64
+  Total missing values      : 0
+
+ARTEFACT STATUS
+----------------------------------------
+  [OK]      Graph-ready dataset
+  [OK]      Graph edges (CSV)
+  [OK]      Adjacency list (pickle)
+  [OK]      Spatial embeddings
+  [OK]      Final spatial dataset
+
+FILES GENERATED DURING WEEK 3
+----------------------------------------
+  [OK]  data/graph_ready_data.csv
+         Stage 1 – Graph-ready housing dataset
+  [OK]  data/graph_edges.csv
+         Stage 2 – KNN edge list (source, target, distance_km)
+  [OK]  data/adjacency.pkl
+         Stage 2 – Adjacency list (node_id -> [neighbours])
+  [OK]  results/graph_statistics.csv
+         Stage 3 – Graph metrics table
+  [OK]  results/degree_distribution.png
+         Stage 3 – Degree distribution plot
+  [OK]  results/graph_visualization.png
+         Stage 3 – Spatial subgraph visualisation
+  [OK]  data/spatial_embeddings.csv
+         Stage 4 – Node2Vec spatial embeddings
+  [OK]  data/spatial_dataset.csv
+         Stage 5 – Final integrated dataset
+  [OK]  results/knn_map_overlay.png
+         Stage 6 – KNN connections on property map
+  [OK]  results/embedding_correlation_heatmap.png
+         Stage 6 – Embedding correlation heatmap
+  [--]  results/pipeline_summary.txt
+         Stage 6 – This pipeline summary report
+
+=================================================================
+All Week 3 stages completed successfully.
+=================================================================
