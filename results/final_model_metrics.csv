@@ -1,0 +1,2 @@
+Model,MAE,RMSE,R2 Score,MAPE (%)
+XGBoost,50413.34,72679.81,0.8732,11.61
